@@ -1,5 +1,5 @@
 # Key Features
-🔐 Enhanced Security
+Enhanced Security
 Role-Based Access Control (Owner, Minter, Bridge, Pauser)
 
 Address Blacklisting (Compliance-ready)
@@ -20,4 +20,4 @@ Fixed Supply Model (2M initial, 10M max - matching original MCO2)
 
 Transparent Operations (Fully verified contract)
 
-Bridge-Compatible (Cross-chain ready)
+Bridge-Compatible (Cross-chain ready) 

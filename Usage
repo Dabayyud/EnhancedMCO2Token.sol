@@ -1,0 +1,52 @@
+💻 Usage
+Prerequisites
+MetaMask wallet with Sepolia ETH
+Basic understanding of ERC-20 tokens
+Testnet ETH for gas fees (Get Sepolia ETH)
+
+Interacting with the Contract
+1. Mint Tokens (Minter Role Required)
+javascript
+await contract.methods.mint("0xRecipientAddress", "1000000000000000000").send({from: minterAddress});
+2. Check Blacklist Status
+javascript
+const isBlacklisted = await contract.methods.isBlacklisted("0xAddress").call();
+3. Get Token Information
+javascript
+const info = await contract.methods.getTokenInfo().call();
+// Returns: name, symbol, totalSupply, currentPrice, lastPriceUpdate
+
+📁 Project Structure
+text
+MCO2-Enhanced-Token/
+├── contracts/
+│   └── MCO2_EnhancedVersion.sol   # Main token contract
+├── scripts/
+│   └── deploy.js                  # Deployment script
+├── test/
+│   └── MCO2.test.js               # Comprehensive test suite
+├── frontend/
+│   └── dapp.html                  # Basic interaction DApp
+└── README.md
+
+This project is part of our University DeFi Society initiative. We welcome contributions from society members:
+Fork the repository
+Create a feature branch (git checkout -b feature/amazing-feature)
+Commit changes (git commit -m 'Add amazing feature')
+Push to branch (git push origin feature/amazing-feature)
+Open a Pull Request
+
+Next Phase Plans:
+Governance DAO integration
+Frontend DApp development
+Cross-chain bridge implementation
+
+
+This project is licensed under the MIT License 
+DeFi Society:  Future of Finance society at the University of Aberdeem
+Etherscan Verified
+OpenZeppelin Documentation: Contracts Docs
+Contact our DeFi Society: https://www.linkedin.com/company/107693148/admin/dashboard/
+Built with 🧠 by Ayyub for the DeFi Society Initiative
+This project is for educational purposes and deployed on testnet. Always audit code before mainnet use.
+
